@@ -1,0 +1,192 @@
+/*
+ * Pretty How Type: A Quick Typography Kit
+ * by Bart J Helms / bartjhelms@gmail.com
+ * No Rights Reserved.
+ *
+ * A ready-to-use 24px baseline sans-serif typography kit.
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* Reset
+*******************************************************************************/
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Typography
+*******************************************************************************/
+body {
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em; /* 24px / 16px; */
+    text-align: left;
+    word-break: hyphenate;
+    text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    clear: both;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+    h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+        text-decoration: none;
+    }
+    h1  {
+        margin-bottom: 24px; 
+        font-size: 2.250em;
+        line-height: 1.555em;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+    h3 {
+        font-size: 1.50em;
+        line-height: 1em;;
+    }
+    h4 {
+        font-size: 1.375em;
+        line-height: 1.09em;
+    }
+    h5 {
+        font-size: 1.25em;
+        line-height: 1.2em;
+    }
+    h6 {
+        font-size: 1.125em;
+        line-height: 1.333em;
+    }
+
+p { 
+    margin-bottom: 24px;
+}
+
+blockquote {
+    margin: 0 48px 24px;
+    font-size: 0.875em;
+}
+
+    @media all and (min-width: 36em) {
+        p, blockquote {
+            text-align: justify;
+        }
+    }
+
+a { text-decoration: underline; }
+
+strong { font-weight: 900; }
+em { font-style: italic; }
+
+ul, ol {
+    margin: 0 48px 24px;
+}
+    ul { list-style-type: disc; }
+    ol { list-style-type: decimal; }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.smallcaps { font-variant: small-caps; }
+
+.aligncenter { text-align: center; }
+.alignright { text-align: right; }
+.alignleft { text-align: left; }
+
+.nodecoration { text-decoration: none; }
+
+.small {
+    font-size: 75%;
+    line-height: 2em;
+}
+    .smaller {
+        font-size: 68.75%;
+        line-height: 2.1818em;
+    }
+
+.pullquote {
+    display: block;
+    position: relative;
+    float: right;
+    width: 37.50%;
+    margin: 0 0 24px 24px;
+    font-weight: 400;
+    font-size: 1.75em;
+    line-height: 1em;
+    text-align: right;
+}
+
+.spaced { margin-bottom: 24px; }
+.doublespaced { margin-bottom: 48px; }
+
+/* Embedded Media
+*******************************************************************************/
+audio, img, video, iframe {
+    display: block;
+    max-width: 100%;
+}
+
+article audio,
+article img,
+article video,
+article iframe {
+    clear: both;
+    margin: 0px auto 24px;
+}
+    article img { width: 100%; }
+
+article figure {
+    position: relative;
+    display: block;
+    clear: both;
+    width: 100%;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+    article figure img { 
+        width: 90%;
+        margin: 12px auto;
+    }
+    article figcaption {
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 0 auto 12px;
+        font-size: 75%;
+        line-height: 2em;
+        text-align: center;
+    }   
