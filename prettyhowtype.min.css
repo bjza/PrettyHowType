@@ -41,6 +41,18 @@ article img{width:100%}
 article figure{position:relative;display:block;clear:both;width:100%;margin-bottom:24px;overflow:hidden}
 article figure img{width:90%;margin:12px auto}
 article figcaption{display:block;position:relative;width:90%;font-size:75%;line-height:2em;text-align:center;margin:0 auto 12px}
+form{margin:0 0 24px;padding:0}
+form ol,fieldset,legend,input,textarea{margin:0;padding:0}
+form li{list-style:none;margin:0 0 24px;padding:0}
+legend{clear:both;margin-bottom:24px;letter-spacing:.05em;font-family:Montserrat, Verdana, sans-serif;font-size:1.125em;line-height:1.333em}
+label,fieldset fieldset legend{font-family:Verdana, sans-serif;letter-spacing:0;font-size:16px;line-height:1.5em;text-align:left;margin:0;padding:0}
+label{display:inline-block;width:23%;margin-right:1%}
+fieldset fieldset label{display:block;width:100%;margin:0 48px}
+input,textarea{display:inline-block;width:73%}
+input{min-height:24px}
+textarea{min-height:48px}
+input[type=radio],input[type=checkbox]{display:inline-block;margin-right:6px;min-height:auto;width:auto}
+input[type=submit],input[type=reset],input[type=button]{display:block;position:relative;min-height:auto;width:auto;margin-bottom:24px;letter-spacing:.05em;font-size:1.25em;line-height:1.2em;padding:6px}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.nodecoration{text-decoration:none}
 p,.spaced{margin-bottom:24px}
 @media all and min-width 36em {

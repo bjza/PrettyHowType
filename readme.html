@@ -9,12 +9,12 @@
 
 <article style="max-width:36em; margin: 0 auto;">
     <h1>Pretty How Type: A CSS Typography Kit</h1>
-    <h2>Version v0.2 // 20130512</h2>
+    <h2>Version v0.3 // 20130515</h2>
     <p>Pretty How Type is a readability-focused CSS typography framework in sans-serif with strong vertical rhythm. It was built with mobile and single-column layouts in mind and is comparable to popular apps and plugins to increase article readability on mobile devices.</p>
 
     <p>Pretty How Type's heading typeface is Montserrat, a free display font developed by Julieta Ulanovsky. There are known issues with non-local fonts on some browser/OS combinations (like Chrome/Windows). Where this is a concern, I recommend falling back onto Verdana (the body typeface).</p>
 
-    <p>Pretty How Type uses an unadjusted font-size of 16px and a line height of 24px, but it resizes well for accessibility.</p>
+    <p>Pretty How Type uses a font-size of 16px and a line height of 24px, but it resizes well for accessibility.</p>
 
     <h2>Usage</h2>
     <p>The current release includes</p>
@@ -22,12 +22,12 @@
         <li>Consistent formatting for <em>ul</em>, <em>ol</em>, <em>dl</em>, <em>blockquote</em>, and <em>code</em>.</li>
         <li>Auto-shrinking for embedded media within article tags.</li>
         <li>Support for figure, figcaption.</li>
+        <li>Forms following the accessibility guidelines <a href="http://alistapart.com/article/prettyaccessibleforms">here</a>.</li>
         <li>A set of formatting classes such as alignleft, alignright, aligncenter, .nodecoration.
 .pullquote</li>
     </ul>
     
     <h3>Examples</h3>
-    <p>Figure:</p>
 
     <p>Ordered list.</p>
     <ol>
@@ -62,6 +62,53 @@
         <dt>dd</dt>
             <dd>Defines a description of an item in a definition list. Here is more text to demonstrate how wrapping works on a dl item.</dd>
     </dl>
+
+    <h4>Forms</h4>
+    <form>
+
+        <fieldset>
+            <legend>Text Inputs</legend>
+            <ol>
+                <li>
+                    <label>Text</label>
+                    <input type="text" />
+                </li>
+                <li>
+                    <label>Textarea</label>
+                    <textarea></textarea>
+                </li>
+                <li>
+                    <label>File</label>
+                    <input type="file" />
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>Button Inputs</legend>
+            <ol>
+                <li>
+                    <fieldset>
+                        <legend>Radio below?</legend>
+                         <label><input type="radio" name="skub" />Skub</label>
+                         <label><input type="radio" name="skub" />Anti-Skub</label>
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset>
+                        <legend>Checkboxxx?</legend>
+                        <label><input type="checkbox" />Yes</label>
+                        <label><input type="checkbox" />No</label>
+                        <label><input type="checkbox" />Maybe So</label>
+                    </fieldset>
+                <li>
+            </ol>
+        </fieldset>
+
+        <input type="submit">
+        
+    </form>
+
 
     <h3>Download</h3>
     <p>Pretty How Type is available on <a href="https://github.com/bjza/PrettyHowType.git">GitHub</a>.</p>
