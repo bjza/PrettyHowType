@@ -1,5 +1,6 @@
 /*
  * Pretty How Type: A Quick Typography Kit
+ * v0.4 // 20130515
  * by Bart J Helms / bartjhelms@gmail.com
  * No Rights Reserved.
  *
@@ -304,3 +305,34 @@ input[type="button"] {
     line-height: 1.2em;
 }
 
+/* Tables
+*******************************************************************************/
+
+table { 
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+td, th {  margin: 0; }
+
+th {
+    padding: 6px 11px;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1.333em;
+    color: white;
+    background-color: black;
+    border-right: 1px dotted white;
+}
+    th:last-of-type { border-right: none; }
+
+td { 
+    padding: 11px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em; /* 24px / 16px; */
+    border: 1px dotted gray;
+}
+    td:first-of-type { border-left: none; }
+    td:last-of-type { border-right: none; }
